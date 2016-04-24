@@ -1,0 +1,40 @@
+<p>
+  <strong>sampleID</strong>
+  <% if @measurement_group.sampleID != nil%>
+      <%= Sample.find(@measurement_group.sampleID).name %>
+      <% else %>
+      -
+      <% end %>
+</p>
+
+<p>
+  <strong>researcherID</strong>
+  <% if @measurement_group.researcherID != nil%>
+      <%= Researcher.find(@measurement_group.researcherID).name %>
+      <% else %>
+      -
+      <% end %>
+</p>
+
+<p>
+  <strong>deviceID</strong>
+  <% if @measurement_group.deviceID != nil%>
+      <%= Device.find(@measurement_group.deviceID).name %>
+      <% else %>
+      -
+      <% end %>
+</p>
+
+<p>
+  <strong>name</strong>
+  <%= @measurement_group.name %>
+</p>
+
+<p>
+  <strong>date</strong>
+  <%= @measurement_group.date %>
+</p>
+
+
+<%= link_to 'Назад', measurement_groups_path %> |
+<%= link_to 'Изменить', edit_measurement_group_path(@measurement_group) %>
