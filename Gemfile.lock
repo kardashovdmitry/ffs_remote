@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: 3ef5f9524cf9fd049d331a4776b00fe449a4dea1
+  specs:
+    paperclip (5.0.0.beta2)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (~> 0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,8 +60,14 @@ GEM
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (8.2.4)
+    chartkick (1.5.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -71,6 +88,7 @@ GEM
     execjs (2.6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hash-deep-merge (0.1.1)
     high_voltage (3.0.0)
     i18n (0.7.0)
     jbuilder (2.4.1)
@@ -82,6 +100,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     kgio (2.10.0)
+    lazy_high_charts (1.5.5)
+      hash-deep-merge
     libv8 (3.16.14.13)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -90,6 +110,7 @@ GEM
     mime-types (3.0)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0221)
+    mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -181,12 +202,16 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   bootstrap-sass
+  bootstrap_form
   byebug
+  chartkick
   coffee-rails (~> 4.1.0)
   devise
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
+  lazy_high_charts
+  paperclip!
   pg
   quiet_assets
   rails (= 4.2.4)
